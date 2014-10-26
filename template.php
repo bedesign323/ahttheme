@@ -72,7 +72,7 @@ function base_preprocess_node(&$vars){
 		}
 	}
 
-	dpm($vars);
+	//dpm($vars);
 }
 
 /**

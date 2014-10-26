@@ -1,5 +1,4 @@
 <div class="article full">
-	<h1>123 <?php print $page_title; ?></h1>
 	<div class="meta-data">
 		<div class="post-date"><?php print $post_date; ?></div>
 		<span class="bull">&bull;</span>
