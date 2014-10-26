@@ -2349,7 +2349,11 @@ ul.inline, ul.links.inline {
   display: none;
 }
 
-/* line 1616, ../sass/style.scss */
+/* line 1614, ../sass/style.scss */
+.full .service-links {
+  text-align: center;
+}
+/* line 1617, ../sass/style.scss */
 .full .service-links li {
   display: inline-block;
   vertical-align: middle;
@@ -2358,7 +2362,7 @@ ul.inline, ul.links.inline {
   *display: inline;
   margin: 0 10px;
 }
-/* line 1621, ../sass/style.scss */
+/* line 1622, ../sass/style.scss */
 .full .service-links a {
   background-image: none  !important;
   font-size: 40px !important;
@@ -2370,43 +2374,43 @@ ul.inline, ul.links.inline {
   vertical-align: middle !important;
 }
 
-/* line 1633, ../sass/style.scss */
+/* line 1634, ../sass/style.scss */
 .full .share-post {
   text-align: center;
   padding-top: 60px;
 }
-/* line 1637, ../sass/style.scss */
+/* line 1638, ../sass/style.scss */
 .full .share-post h2 {
   font-weight: 200;
   color: #e4ba27;
   font-size: 30px;
   margin-bottom: 10px;
 }
-/* line 1644, ../sass/style.scss */
+/* line 1645, ../sass/style.scss */
 .full .share-post h3 {
   font-family: "GaramondPremierProLightDisplay", serif;
   font-style: italic;
   margin-bottom: 10px;
 }
-/* line 1650, ../sass/style.scss */
+/* line 1651, ../sass/style.scss */
 .full .share-post ul li {
   margin: 0 10px;
 }
-/* line 1655, ../sass/style.scss */
+/* line 1656, ../sass/style.scss */
 .full .share-post .pinterest {
   background: url(../images/service_links/pinterest.png) no-repeat;
   width: 80px;
   height: 80px;
   display: block;
 }
-/* line 1662, ../sass/style.scss */
+/* line 1663, ../sass/style.scss */
 .full .share-post a {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 1666, ../sass/style.scss */
+/* line 1667, ../sass/style.scss */
 .full .share-post a:hover {
   background-color: #eeeeee;
   color: #e4ba27;
@@ -2414,39 +2418,39 @@ ul.inline, ul.links.inline {
 
 /* FORMS
 -------------------------------------------------------------- */
-/* line 1676, ../sass/style.scss */
+/* line 1677, ../sass/style.scss */
 form {
   max-width: 600px;
   margin: 0 auto 0;
   background-color: #f1f1f1;
   padding: 60px;
 }
-/* line 1682, ../sass/style.scss */
+/* line 1683, ../sass/style.scss */
 form .form-item .description {
   font-size: 12px;
   margin-top: 3px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-/* line 1689, ../sass/style.scss */
+/* line 1690, ../sass/style.scss */
 form .form-required {
   color: #e4ba27;
   font-size: 20px;
 }
 @media (max-width: 600px) {
-  /* line 1676, ../sass/style.scss */
+  /* line 1677, ../sass/style.scss */
   form {
     padding: 20px;
     margin: 10px;
   }
 }
 
-/* line 1700, ../sass/style.scss */
+/* line 1701, ../sass/style.scss */
 .form-item {
   margin-top: 0;
 }
 
-/* line 1702, ../sass/style.scss */
+/* line 1703, ../sass/style.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -2461,7 +2465,7 @@ textarea {
   font-weight: 200;
   color: #a2a2a2;
 }
-/* line 1716, ../sass/style.scss */
+/* line 1717, ../sass/style.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -2470,7 +2474,7 @@ textarea:focus {
   color: #888;
 }
 
-/* line 1722, ../sass/style.scss */
+/* line 1723, ../sass/style.scss */
 label {
   font-size: 18px;
   margin-bottom: 3px;
@@ -2478,7 +2482,7 @@ label {
   cursor: pointer;
 }
 
-/* line 1729, ../sass/style.scss */
+/* line 1730, ../sass/style.scss */
 input[type="submit"] {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2496,18 +2500,18 @@ input[type="submit"] {
   border: none;
   margin-left: 5px;
 }
-/* line 1743, ../sass/style.scss */
+/* line 1744, ../sass/style.scss */
 input[type="submit"]:hover {
   background-color: #e6e6e6;
 }
 
-/* line 1748, ../sass/style.scss */
+/* line 1749, ../sass/style.scss */
 .form-actions {
   text-align: right;
   margin-bottom: 0;
 }
 
-/* line 1753, ../sass/style.scss */
+/* line 1754, ../sass/style.scss */
 ul.tabs {
   text-align: center;
   margin-top: 20px;
@@ -2515,24 +2519,24 @@ ul.tabs {
   border-bottom: #e4ba27 dashed 1px;
   margin-bottom: 40px;
 }
-/* line 1761, ../sass/style.scss */
+/* line 1762, ../sass/style.scss */
 ul.tabs li a {
   padding: 10px 20px;
   border: none !important;
   background-color: transparent !important;
 }
 
-/* line 1775, ../sass/style.scss */
+/* line 1776, ../sass/style.scss */
 .search-form #edit-keys {
   width: 90%;
 }
 @media (max-width: 600px) {
-  /* line 1775, ../sass/style.scss */
+  /* line 1776, ../sass/style.scss */
   .search-form #edit-keys {
     width: 80%;
   }
 }
-/* line 1783, ../sass/style.scss */
+/* line 1784, ../sass/style.scss */
 .search-form #edit-submit {
   position: relative;
   top: 10px;
@@ -2541,19 +2545,19 @@ ul.tabs li a {
 
 /* MESSAGES
 -------------------------------------------------------------- */
-/* line 1792, ../sass/style.scss */
+/* line 1793, ../sass/style.scss */
 div.messages-holder {
   border: none;
   max-width: 800px;
   margin: 0 auto 60px;
 }
-/* line 1797, ../sass/style.scss */
+/* line 1798, ../sass/style.scss */
 div.messages-holder .messages {
   padding: 30px;
   font-family: "Raleway", sans-serif;
   border: none;
 }
-/* line 1803, ../sass/style.scss */
+/* line 1804, ../sass/style.scss */
 div.messages-holder .error,
 div.messages-holder .status {
   background-image: none;
@@ -2561,40 +2565,40 @@ div.messages-holder .status {
 
 /* EXTRAS
 -------------------------------------------------------------- */
-/* line 1811, ../sass/style.scss */
+/* line 1812, ../sass/style.scss */
 body.cke_show_borders {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 1813, ../sass/style.scss */
+/* line 1814, ../sass/style.scss */
 .image-post_full {
   position: relative;
   z-index: 1;
 }
 
-/* line 1818, ../sass/style.scss */
+/* line 1819, ../sass/style.scss */
 div.krumo-root {
   width: 800px;
   margin-left: 500px;
 }
 
-/* line 1823, ../sass/style.scss */
+/* line 1824, ../sass/style.scss */
 body.mceContentBody {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 1830, ../sass/style.scss */
+/* line 1831, ../sass/style.scss */
 #cboxContent, .cboxPhoto {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 1834, ../sass/style.scss */
+/* line 1835, ../sass/style.scss */
 #cboxClose.cbox-close-plain {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2607,7 +2611,7 @@ body.mceContentBody {
   /*text-indent: -999px !important;*/
 }
 
-/* line 1844, ../sass/style.scss */
+/* line 1845, ../sass/style.scss */
 #just-for-robots {
   font-family: "Raleway", sans-serif;
   color: #e4ba27;
@@ -2615,12 +2619,12 @@ body.mceContentBody {
   text-align: justify;
 }
 
-/* line 1852, ../sass/style.scss */
+/* line 1853, ../sass/style.scss */
 #logo-for-robots {
   padding-top: 600px;
   line-height: 0;
 }
-/* line 1856, ../sass/style.scss */
+/* line 1857, ../sass/style.scss */
 #logo-for-robots a {
   display: block;
 }

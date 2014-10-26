@@ -1612,6 +1612,7 @@ $share_icon_width: 			80px;
 }
 
 .full .service-links{
+	text-align: center;
 	
 	li{
 		@include inline-block;
