@@ -48,7 +48,7 @@
 
 	<div id="footer" class="bg-light">
 			<div class="inner">
-				<div class="copy">&copy; <?php echo date('Y'); ?> Aim High. Don't steal. It's not nice.</div>
+				<div class="copy">&copy; <?php echo date('Y'); ?> Aim High. Don't steal. It's not nice. <a href="/robots">Just for robots...</a></div>
 			</div>
 		</div>
 </div>
