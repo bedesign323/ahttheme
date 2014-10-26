@@ -50,7 +50,7 @@
 		<h3>{ you know you want to }</h3>
 		
 	</div>
-
+	
+	<?php print $service_links; ?>
 	
 </div>
-<?php print $service_links; ?>
