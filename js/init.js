@@ -75,15 +75,15 @@ Drupal.behaviors.init = {
 	}
 }
 
-Drupal.behaviors.scroll = {
-	attach: function (context, settings) {
+// Drupal.behaviors.scroll = {
+// 	attach: function (context, settings) {
 
-		jQuery('#extras .inner').once().mCustomScrollbar({
-			'scrollInertia' : 0,
-			'autoHideScrollbar' : true,
-		});
-	}
-}
+// 		jQuery('#extras .inner').once().mCustomScrollbar({
+// 			'scrollInertia' : 0,
+// 			'autoHideScrollbar' : true,
+// 		});
+// 	}
+// }
 
 
 
