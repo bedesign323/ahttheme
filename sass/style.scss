@@ -65,6 +65,7 @@ h1,
 	left: 0;
 	width: $extras_width;
 	z-index: 100;
+	max-width: 100%;
 }
 
 #extras{
@@ -75,6 +76,7 @@ h1,
 	left: 0;
 	width: $extras_width;
 	z-index: 100;
+	max-width: 100%;
 
 	.inner{
 		width: $extras_width + 20;
@@ -82,19 +84,20 @@ h1,
 		height: 100%;
 		overflow-y: scroll;
 		z-index: 100;
+		max-width: 105%;
 
 		&:hover{
 			overflow-y: scroll;
 		}
 	}
 
-	@include bp(s){
+	/*@include bp(s){
 		width: 100%;
 
 		.inner{
 			width: 105%;
 		}
-	}
+	}*/
 }
 
 
@@ -200,12 +203,17 @@ h1,
 		left: 0;
 	}
 
-	#main{
+	#main,
+	#footer{
 		margin-left: 0;
 	}
 
 	#main-nav{
 		left: 0;
+
+		.block{
+			margin-left: 0;
+		}
 	}
 
 }
@@ -274,6 +282,7 @@ h1,
 	background-color: #fff;
 
 	.block{
+		@include transition;
 		margin-left: -$extras_width;
 		padding: 0 !important;
 
@@ -420,14 +429,16 @@ h1,
 	z-index: 100;
 	text-align: center;
 
-	@include bp(s){
+	@include bp(m){
 		right: 10px;
 	}
 
 }
 
 #footer{
+	@include transition;
 	margin-top: 60px;
+	margin-left: $extras_width;
 	clear: both;
 
 	.copy{
@@ -1406,7 +1417,7 @@ body.mceContentBody,
 		
 	}
 
-	&.side-open{
+	&.side-opened{
 		background-color: $color_main;
 
 		
