@@ -7,12 +7,12 @@ Drupal.behaviors.init = {
 		var win_h = win.height();
 
 
+
 		// Sidebar control
 		jQuery('#side-control, .search-toggle, #main-overlay').once().click(function(){
-			jQuery('body').toggleClass('side-open');
-			setTimeout(function(){
-				jQuery('body').toggleClass('side-opened');
-			}, 300);
+			jQuery('body').toggleClass('side-closed');
+			jQuery('body').toggleClass('side-opened');
+			
 			//jQuery('#edit-search-block-form--2').focus();
 			//setSideCookie();
 		});
@@ -60,7 +60,7 @@ Drupal.behaviors.init = {
 
 		function navPos(){
 			var nav_top = 60 - windowScroll;
-			if(nav_top < 0 || win_w < 600){
+			if(nav_top < 0 || win_w < 1000){
 				nav_top = 0;
 			}
 			jQuery('#main-nav').css({'top' : nav_top});
@@ -71,6 +71,22 @@ Drupal.behaviors.init = {
 			return false;
 		});
 
+
+		jQuery(window).resize(function(){
+			winResize();
+		});
+
+		function winResize(){
+			win_w = win.width();
+
+			if(win_w < 1000 && !jQuery('body').hasClass('shrank')){
+				jQuery('body').addClass('shrank').addClass('side-closed').removeClass('side-opened');
+			}else if(win_w > 1000 && jQuery('body').hasClass('shrank')){
+				jQuery('body').removeClass('shrank').removeClass('side-closed').addClass('side-opened');
+			}
+		}
+
+		winResize();
 
 	}
 }
