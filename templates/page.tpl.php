@@ -1,25 +1,27 @@
 <div id="wrap">
+
+	
+
+	<div id="extras-wrapper">
 	<div id="extras">
 		<div class="inner">
 			<h2 class="title">The Extras</h2>
-			
 			<div id="main-nav">
 				<div class="inner-nav">
 				<?php echo render($page['nav_main']); ?>
-				<div class="search-toggle"><div class="icon-search"></div></div>
 				</div>
 			</div>
-			
 			<?php echo render($page['sidebar_first']); ?>
 			<div class="plane"><img src="/sites/all/themes/base/images/AH-plane-wt.png" alt="Aim High plane" nopin="nopin"></div>
 
 		</div>
 	</div>
+	</div>
 	
 	<div id="logo"><a href="/"></a></div>
-	<div id="side-control"><div class="icon-menu"></div></div>
 	
 	<div id="main">
+		<div id="side-control"><div class="icon-menu"></div></div>
 		<div id="main-overlay"></div>
 		<div class="inner">
 			
