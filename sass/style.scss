@@ -1376,6 +1376,8 @@ body.mceContentBody,
 	.inner{
 		max-width: 1000px;
 		margin: 60px auto;
+		position: relative;
+		z-index: 10;
 	}
 
 	h2{

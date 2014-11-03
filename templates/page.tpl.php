@@ -54,35 +54,11 @@
 		<div class="inner">
 			
 			<div id="footer-left">
-				<h2>Why we exist...</h2>
-				<a href="/about"><img src="/sites/all/themes/base/images/AH-about-2.jpg" alt="Aim High about image"></a>
-				<p>When you Aim High you aim for a target that is above you. Being able to hit the target takes a combination of talent, skill, and dedication. Through photography, literature, music, lifestyle, and design we intend to hold the target up in order to inspire people to AIM HIGH. </p>
-
-				<h2>Wanna see what it looks like when two creatives decide to give back?</h2>
-				<a href="http://freshcharities.com" target="_blank"><img src="/sites/all/themes/base/images/FC-logo.jpg" alt=""></a>
+				<?php echo render($page['footer_left']); ?>
 			</div>
 			
 			<div id="footer-right">
-				<h2>Get Social...</h2>
-				<div class="social-icons">
-					<a href="http://www.facebook.com/aimhighforlife" class="icon-facebook" target="_blank"></a>
-				  	<a href="http://twitter.com/aimhighforlife" class="icon-twitter" target="_blank"></a>
-				  	<a href="http://instagram.com/aimhighforlife" class="icon-instagram" target="_blank"></a>
-				  	<a href="http://pinterest.com/aimhighforlife" class="icon-pinterest" target="_blank"></a>
-					<a href="http://aimhighforlife.com/rss.xml" class="icon-rss" target="_blank"></a>
-				</div>
-
-				<h2>Those other links...</h2>
-				<ul>
-					<li><a href="mailto:info@aimhighforlife.com">Contact</a></li>
-					<li><a href="mailto:submissiona@aimhighforlife.com">Submissions</a></li>
-					<li><a href="mailto:info@aimhighforlife.com">Hire Us</a></li>
-					<li><a href="mailto:advertise@aimhighforlife.com">Advertise</a></li>
-					<li><a href="/terms-service">Terms of Service</a></li>
-					<li><a href="/robots">Just for Robots</a></li>
-				</ul>
-				
-
+				<?php echo render($page['footer_right']); ?>
 			</div>
 
 			<div class="copy">&copy; <?php echo date('Y'); ?> Aim High. Don't steal. It's not nice.</div>

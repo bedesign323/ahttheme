@@ -2138,26 +2138,28 @@ body.mceContentBody .about-author h2,
 #footer .inner {
   max-width: 1000px;
   margin: 60px auto;
+  position: relative;
+  z-index: 10;
 }
-/* line 1381, ../sass/style.scss */
+/* line 1383, ../sass/style.scss */
 #footer h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-/* line 1386, ../sass/style.scss */
+/* line 1388, ../sass/style.scss */
 #footer * + h2 {
   margin-top: 40px;
 }
-/* line 1390, ../sass/style.scss */
+/* line 1392, ../sass/style.scss */
 #footer img {
   max-width: 100%;
   margin-bottom: 20px;
 }
-/* line 1395, ../sass/style.scss */
+/* line 1397, ../sass/style.scss */
 #footer p {
   text-align: justify;
 }
-/* line 1399, ../sass/style.scss */
+/* line 1401, ../sass/style.scss */
 #footer ul li a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -2166,29 +2168,29 @@ body.mceContentBody .about-author h2,
   padding: 8px 0;
   display: block;
 }
-/* line 1408, ../sass/style.scss */
+/* line 1410, ../sass/style.scss */
 #footer .social-icons {
   text-align: left;
 }
-/* line 1411, ../sass/style.scss */
+/* line 1413, ../sass/style.scss */
 #footer .social-icons a {
   background: none;
   color: #888;
   width: auto;
   height: auto;
 }
-/* line 1417, ../sass/style.scss */
+/* line 1419, ../sass/style.scss */
 #footer .social-icons a:hover {
   color: #e4ba27;
 }
-/* line 1423, ../sass/style.scss */
+/* line 1425, ../sass/style.scss */
 #footer .copy {
   clear: both;
   padding-top: 60px;
   z-index: 10;
   position: relative;
 }
-/* line 1430, ../sass/style.scss */
+/* line 1432, ../sass/style.scss */
 #footer .skyline {
   position: absolute;
   z-index: 0;
@@ -2198,37 +2200,37 @@ body.mceContentBody .about-author h2,
   bottom: 0;
   line-height: 0;
 }
-/* line 1439, ../sass/style.scss */
+/* line 1441, ../sass/style.scss */
 #footer .skyline img {
   margin-bottom: 0;
 }
 
-/* line 1445, ../sass/style.scss */
+/* line 1447, ../sass/style.scss */
 #footer-left {
   float: left;
   width: 55%;
   margin-right: 5%;
 }
 
-/* line 1451, ../sass/style.scss */
+/* line 1453, ../sass/style.scss */
 #footer-mid {
   float: left;
   width: 30%;
 }
 
-/* line 1457, ../sass/style.scss */
+/* line 1459, ../sass/style.scss */
 #footer-right {
   float: left;
   width: 35%;
   margin-left: 5%;
 }
 
-/* line 1465, ../sass/style.scss */
+/* line 1467, ../sass/style.scss */
 .page-taxonomy h1 {
   margin-bottom: 60px;
 }
 @media (max-width: 600px) {
-  /* line 1465, ../sass/style.scss */
+  /* line 1467, ../sass/style.scss */
   .page-taxonomy h1 {
     margin-bottom: 10px;
     background-color: #e4ba27;
@@ -2248,7 +2250,7 @@ body.mceContentBody .about-author h2,
 -------------------------------------------------------------- */
 /* MAIN 
 -------------------------------------------------------------- */
-/* line 1494, ../sass/style.scss */
+/* line 1496, ../sass/style.scss */
 #side-control {
   background-color: #e4ba27;
   cursor: pointer;
@@ -2257,7 +2259,7 @@ body.mceContentBody .about-author h2,
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 1499, ../sass/style.scss */
+/* line 1501, ../sass/style.scss */
 #side-control div {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -2266,29 +2268,29 @@ body.mceContentBody .about-author h2,
   color: #fff;
   font-size: 24px;
 }
-/* line 1505, ../sass/style.scss */
+/* line 1507, ../sass/style.scss */
 #side-control:hover {
   background-color: #eeeeee;
 }
-/* line 1508, ../sass/style.scss */
+/* line 1510, ../sass/style.scss */
 #side-control:hover div {
   color: #e4ba27;
 }
-/* line 1514, ../sass/style.scss */
+/* line 1516, ../sass/style.scss */
 #side-control.side-opened {
   background-color: #888;
 }
 
-/* line 1523, ../sass/style.scss */
+/* line 1525, ../sass/style.scss */
 body.side-open #side-control {
   background-color: #888;
 }
-/* line 1526, ../sass/style.scss */
+/* line 1528, ../sass/style.scss */
 body.side-open #side-control div {
   color: #e4ba27;
 }
 
-/* line 1532, ../sass/style.scss */
+/* line 1534, ../sass/style.scss */
 #main {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -2298,11 +2300,11 @@ body.side-open #side-control div {
 
 /* COMMENTS
 -------------------------------------------------------------- */
-/* line 1539, ../sass/style.scss */
+/* line 1541, ../sass/style.scss */
 .comment-form-holder {
   padding: 60px 0 0;
 }
-/* line 1542, ../sass/style.scss */
+/* line 1544, ../sass/style.scss */
 .comment-form-holder h2 {
   font-size: 80px;
   text-transform: uppercase;
@@ -2312,57 +2314,57 @@ body.side-open #side-control div {
   margin-bottom: 20px;
 }
 @media (max-width: 600px) {
-  /* line 1542, ../sass/style.scss */
+  /* line 1544, ../sass/style.scss */
   .comment-form-holder h2 {
     font-size: 40px;
   }
 }
-/* line 1555, ../sass/style.scss */
+/* line 1557, ../sass/style.scss */
 .comment-form-holder form {
   display: none;
 }
-/* line 1559, ../sass/style.scss */
+/* line 1561, ../sass/style.scss */
 .comment-form-holder .btn-big {
   padding-bottom: 40px;
 }
 
-/* line 1566, ../sass/style.scss */
+/* line 1568, ../sass/style.scss */
 #edit-comment-body-und-0-format--3 {
   display: none;
 }
 
-/* line 1570, ../sass/style.scss */
+/* line 1572, ../sass/style.scss */
 .pane-node-comments {
   max-width: 800px;
   margin: 40px auto;
 }
 
-/* line 1576, ../sass/style.scss */
+/* line 1578, ../sass/style.scss */
 .comment {
   max-width: 500px;
   background-color: #f8f7f6;
   padding: 20px;
   margin-bottom: 40px;
 }
-/* line 1585, ../sass/style.scss */
+/* line 1587, ../sass/style.scss */
 .comment .comment-header .title a {
   font-size: 20px;
   float: left;
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
 }
-/* line 1592, ../sass/style.scss */
+/* line 1594, ../sass/style.scss */
 .comment .comment-header .website a {
   color: #e4ba27;
   float: right;
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 1598, ../sass/style.scss */
+/* line 1600, ../sass/style.scss */
 .comment .comment-header .website a:hover {
   color: #888;
 }
-/* line 1604, ../sass/style.scss */
+/* line 1606, ../sass/style.scss */
 .comment .submitted {
   padding: 5px 0;
   font-size: 12px;
@@ -2372,19 +2374,19 @@ body.side-open #side-control div {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-/* line 1618, ../sass/style.scss */
+/* line 1620, ../sass/style.scss */
 .comment .field-name-comment-body {
   padding: 20px 20px 20px 60px;
   font-size: 14px;
 }
-/* line 1623, ../sass/style.scss */
+/* line 1625, ../sass/style.scss */
 .comment .quo-mark {
   position: absolute !important;
   font-size: 180px;
   padding: 20px 0;
   color: #f2f2f2;
 }
-/* line 1630, ../sass/style.scss */
+/* line 1632, ../sass/style.scss */
 .comment .links {
   border-top: #e3ded8 solid 1px;
   font-size: 12px;
@@ -2396,7 +2398,7 @@ body.side-open #side-control div {
   font-weight: 400;
 }
 
-/* line 1642, ../sass/style.scss */
+/* line 1644, ../sass/style.scss */
 ul.inline, ul.links.inline {
   display: block;
 }
@@ -2404,35 +2406,35 @@ ul.inline, ul.links.inline {
 /* PROFILE 
 --------------------------------------------------------------
 -------------------------------------------------------------- */
-/* line 1649, ../sass/style.scss */
+/* line 1651, ../sass/style.scss */
 .profile.account {
   max-width: 800px;
   margin: auto;
 }
-/* line 1653, ../sass/style.scss */
+/* line 1655, ../sass/style.scss */
 .profile.account h1 {
   margin-bottom: 20px;
 }
-/* line 1657, ../sass/style.scss */
+/* line 1659, ../sass/style.scss */
 .profile.account .profile-image {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 1662, ../sass/style.scss */
+/* line 1664, ../sass/style.scss */
 .profile.account .full-bio {
   text-align: justify;
 }
-/* line 1665, ../sass/style.scss */
+/* line 1667, ../sass/style.scss */
 .profile.account .full-bio p + p {
   margin-top: 20px;
 }
 
-/* line 1673, ../sass/style.scss */
+/* line 1675, ../sass/style.scss */
 .profile.teaser .profile-image {
   float: left;
   margin-right: 20px;
 }
-/* line 1678, ../sass/style.scss */
+/* line 1680, ../sass/style.scss */
 .profile.teaser h3 {
   margin-bottom: 10px;
   font-size: 20px;
@@ -2441,11 +2443,11 @@ ul.inline, ul.links.inline {
 
 /* SOCIAL
 -------------------------------------------------------------- */
-/* line 1687, ../sass/style.scss */
+/* line 1689, ../sass/style.scss */
 .social-icons {
   text-align: center;
 }
-/* line 1690, ../sass/style.scss */
+/* line 1692, ../sass/style.scss */
 .social-icons a {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -2464,12 +2466,12 @@ ul.inline, ul.links.inline {
   line-height: 50px;
   margin: 0 5px;
 }
-/* line 1702, ../sass/style.scss */
+/* line 1704, ../sass/style.scss */
 .social-icons a:hover {
   background-color: #888;
 }
 
-/* line 1711, ../sass/style.scss */
+/* line 1713, ../sass/style.scss */
 .service-links li a {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -2480,37 +2482,37 @@ ul.inline, ul.links.inline {
   *zoom: 1;
   *display: inline;
 }
-/* line 1716, ../sass/style.scss */
+/* line 1718, ../sass/style.scss */
 .service-links li a img {
   display: none;
 }
-/* line 1720, ../sass/style.scss */
+/* line 1722, ../sass/style.scss */
 .service-links li a.service-links-facebook:before {
   content: "\e605";
 }
-/* line 1724, ../sass/style.scss */
+/* line 1726, ../sass/style.scss */
 .service-links li a.service-links-twitter:before {
   content: "\e604";
 }
-/* line 1728, ../sass/style.scss */
+/* line 1730, ../sass/style.scss */
 .service-links li a.service-links-google-plus:before {
   content: "\e606";
 }
-/* line 1732, ../sass/style.scss */
+/* line 1734, ../sass/style.scss */
 .service-links li a.service-links-pinterest-button:before {
   content: "\e607";
 }
 
-/* line 1737, ../sass/style.scss */
+/* line 1739, ../sass/style.scss */
 .service-links li.service-links-pinterest-button a:before {
   content: "\e607";
 }
 
-/* line 1741, ../sass/style.scss */
+/* line 1743, ../sass/style.scss */
 .teaser .service-links {
   float: left;
 }
-/* line 1744, ../sass/style.scss */
+/* line 1746, ../sass/style.scss */
 .teaser .service-links li {
   display: inline-block;
   vertical-align: middle;
@@ -2520,16 +2522,16 @@ ul.inline, ul.links.inline {
   margin: 0 10px 0 0;
 }
 
-/* line 1751, ../sass/style.scss */
+/* line 1753, ../sass/style.scss */
 .teaser li.service-links-pinterest-button {
   display: none;
 }
 
-/* line 1755, ../sass/style.scss */
+/* line 1757, ../sass/style.scss */
 .full .service-links {
   text-align: center;
 }
-/* line 1758, ../sass/style.scss */
+/* line 1760, ../sass/style.scss */
 .full .service-links li {
   display: inline-block;
   vertical-align: middle;
@@ -2538,7 +2540,7 @@ ul.inline, ul.links.inline {
   *display: inline;
   margin: 0 10px;
 }
-/* line 1763, ../sass/style.scss */
+/* line 1765, ../sass/style.scss */
 .full .service-links a {
   background-image: none  !important;
   font-size: 40px !important;
@@ -2550,43 +2552,43 @@ ul.inline, ul.links.inline {
   vertical-align: middle !important;
 }
 
-/* line 1775, ../sass/style.scss */
+/* line 1777, ../sass/style.scss */
 .full .share-post {
   text-align: center;
   padding-top: 60px;
 }
-/* line 1779, ../sass/style.scss */
+/* line 1781, ../sass/style.scss */
 .full .share-post h2 {
   font-weight: 200;
   color: #e4ba27;
   font-size: 30px;
   margin-bottom: 10px;
 }
-/* line 1786, ../sass/style.scss */
+/* line 1788, ../sass/style.scss */
 .full .share-post h3 {
   font-family: "GaramondPremierProLightDisplay", serif;
   font-style: italic;
   margin-bottom: 10px;
 }
-/* line 1792, ../sass/style.scss */
+/* line 1794, ../sass/style.scss */
 .full .share-post ul li {
   margin: 0 10px;
 }
-/* line 1797, ../sass/style.scss */
+/* line 1799, ../sass/style.scss */
 .full .share-post .pinterest {
   background: url(../images/service_links/pinterest.png) no-repeat;
   width: 80px;
   height: 80px;
   display: block;
 }
-/* line 1804, ../sass/style.scss */
+/* line 1806, ../sass/style.scss */
 .full .share-post a {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 1808, ../sass/style.scss */
+/* line 1810, ../sass/style.scss */
 .full .share-post a:hover {
   background-color: #eeeeee;
   color: #e4ba27;
@@ -2594,39 +2596,39 @@ ul.inline, ul.links.inline {
 
 /* FORMS
 -------------------------------------------------------------- */
-/* line 1818, ../sass/style.scss */
+/* line 1820, ../sass/style.scss */
 form {
   max-width: 600px;
   margin: 0 auto 0;
   background-color: #f1f1f1;
   padding: 60px;
 }
-/* line 1824, ../sass/style.scss */
+/* line 1826, ../sass/style.scss */
 form .form-item .description {
   font-size: 12px;
   margin-top: 3px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-/* line 1831, ../sass/style.scss */
+/* line 1833, ../sass/style.scss */
 form .form-required {
   color: #e4ba27;
   font-size: 20px;
 }
 @media (max-width: 600px) {
-  /* line 1818, ../sass/style.scss */
+  /* line 1820, ../sass/style.scss */
   form {
     padding: 20px;
     margin: 10px;
   }
 }
 
-/* line 1842, ../sass/style.scss */
+/* line 1844, ../sass/style.scss */
 .form-item {
   margin-top: 0;
 }
 
-/* line 1844, ../sass/style.scss */
+/* line 1846, ../sass/style.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -2641,7 +2643,7 @@ textarea {
   font-weight: 200;
   color: #a2a2a2;
 }
-/* line 1858, ../sass/style.scss */
+/* line 1860, ../sass/style.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -2650,7 +2652,7 @@ textarea:focus {
   color: #888;
 }
 
-/* line 1864, ../sass/style.scss */
+/* line 1866, ../sass/style.scss */
 label {
   font-size: 18px;
   margin-bottom: 3px;
@@ -2658,7 +2660,7 @@ label {
   cursor: pointer;
 }
 
-/* line 1871, ../sass/style.scss */
+/* line 1873, ../sass/style.scss */
 input[type="submit"] {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -2676,18 +2678,18 @@ input[type="submit"] {
   border: none;
   margin-left: 5px;
 }
-/* line 1885, ../sass/style.scss */
+/* line 1887, ../sass/style.scss */
 input[type="submit"]:hover {
   background-color: #e6e6e6;
 }
 
-/* line 1890, ../sass/style.scss */
+/* line 1892, ../sass/style.scss */
 .form-actions {
   text-align: right;
   margin-bottom: 0;
 }
 
-/* line 1895, ../sass/style.scss */
+/* line 1897, ../sass/style.scss */
 ul.tabs {
   text-align: center;
   margin-top: 20px;
@@ -2695,24 +2697,24 @@ ul.tabs {
   border-bottom: #e4ba27 dashed 1px;
   margin-bottom: 40px;
 }
-/* line 1903, ../sass/style.scss */
+/* line 1905, ../sass/style.scss */
 ul.tabs li a {
   padding: 10px 20px;
   border: none !important;
   background-color: transparent !important;
 }
 
-/* line 1917, ../sass/style.scss */
+/* line 1919, ../sass/style.scss */
 .search-form #edit-keys {
   width: 90%;
 }
 @media (max-width: 600px) {
-  /* line 1917, ../sass/style.scss */
+  /* line 1919, ../sass/style.scss */
   .search-form #edit-keys {
     width: 80%;
   }
 }
-/* line 1925, ../sass/style.scss */
+/* line 1927, ../sass/style.scss */
 .search-form #edit-submit {
   position: relative;
   top: 10px;
@@ -2721,19 +2723,19 @@ ul.tabs li a {
 
 /* MESSAGES
 -------------------------------------------------------------- */
-/* line 1934, ../sass/style.scss */
+/* line 1936, ../sass/style.scss */
 div.messages-holder {
   border: none;
   max-width: 800px;
   margin: 0 auto 60px;
 }
-/* line 1939, ../sass/style.scss */
+/* line 1941, ../sass/style.scss */
 div.messages-holder .messages {
   padding: 30px;
   font-family: "Raleway", sans-serif;
   border: none;
 }
-/* line 1945, ../sass/style.scss */
+/* line 1947, ../sass/style.scss */
 div.messages-holder .error,
 div.messages-holder .status {
   background-image: none;
@@ -2741,40 +2743,40 @@ div.messages-holder .status {
 
 /* EXTRAS
 -------------------------------------------------------------- */
-/* line 1953, ../sass/style.scss */
+/* line 1955, ../sass/style.scss */
 body.cke_show_borders {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 1955, ../sass/style.scss */
+/* line 1957, ../sass/style.scss */
 .image-post_full {
   position: relative;
   z-index: 1;
 }
 
-/* line 1960, ../sass/style.scss */
+/* line 1962, ../sass/style.scss */
 div.krumo-root {
   width: 800px;
   margin-left: 500px;
 }
 
-/* line 1965, ../sass/style.scss */
+/* line 1967, ../sass/style.scss */
 body.mceContentBody {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 1972, ../sass/style.scss */
+/* line 1974, ../sass/style.scss */
 #cboxContent, .cboxPhoto {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 1976, ../sass/style.scss */
+/* line 1978, ../sass/style.scss */
 #cboxClose.cbox-close-plain {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2787,7 +2789,7 @@ body.mceContentBody {
   /*text-indent: -999px !important;*/
 }
 
-/* line 1986, ../sass/style.scss */
+/* line 1988, ../sass/style.scss */
 #just-for-robots {
   font-family: "Raleway", sans-serif;
   color: #e4ba27;
@@ -2795,12 +2797,12 @@ body.mceContentBody {
   text-align: justify;
 }
 
-/* line 1994, ../sass/style.scss */
+/* line 1996, ../sass/style.scss */
 #logo-for-robots {
   padding-top: 600px;
   line-height: 0;
 }
-/* line 1998, ../sass/style.scss */
+/* line 2000, ../sass/style.scss */
 #logo-for-robots a {
   display: block;
 }
