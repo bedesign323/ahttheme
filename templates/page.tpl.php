@@ -4,14 +4,14 @@
 
 	<div id="extras-wrapper">
 	<div id="extras">
-		<h2 class="title">The Extras</h2>
+		
+		<div class="inner">
+			<h2 class="title">The Extras</h2>
 			<div id="main-nav">
 				<div class="inner-nav">
 				<?php echo render($page['nav_main']); ?>
 				</div>
 			</div>
-		<div class="inner">
-			
 			<?php echo render($page['sidebar_first']); ?>
 			<div class="plane"><img src="/sites/all/themes/base/images/AH-plane-wt.png" alt="Aim High plane" nopin="nopin"></div>
 
