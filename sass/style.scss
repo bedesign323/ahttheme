@@ -1373,6 +1373,10 @@ body.mceContentBody,
 	position: relative;
 	padding: 0 130px 100px;
 
+	.block + .block{
+		margin-top: 40px;
+	}
+
 	.inner{
 		max-width: 1000px;
 		margin: 60px auto;
