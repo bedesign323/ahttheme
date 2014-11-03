@@ -14,26 +14,26 @@ Drupal.behaviors.init = {
 			jQuery('body').toggleClass('side-opened');
 			
 			//jQuery('#edit-search-block-form--2').focus();
-			//setSideCookie();
+			setSideCookie();
 		});
 
-		// function setSideCookie(){
-		// 	if(jQuery('body').hasClass('side-open')){
-		// 		jQuery.cookie('side-open', 'true');
-		// 	}else{
-		// 		jQuery.cookie('side-open', 'false');
-		// 	}
+		function setSideCookie(){
+			if(jQuery('body').hasClass('side-closed')){
+				jQuery.cookie('side-closed', 'true');
+			}else{
+				jQuery.cookie('side-closed', 'false');
+			}
 
-		// 	console.log(jQuery.cookie('side-open'));
-		// }
+			console.log(jQuery.cookie('side-closed'));
+		}
 
-		// function checkSideCookie(){
-		// 	if(jQuery.cookie('side-open') == 'true'){
-		// 		jQuery('body').addClass('side-open');
-		// 	}
-		// }
+		function checkSideCookie(){
+			if(jQuery.cookie('side-closed') == 'true'){
+				jQuery('body').addClass('side-closed');
+			}
+		}
 
-		//checkSideCookie();
+		checkSideCookie();
 
 
 		// Body images
@@ -81,7 +81,7 @@ Drupal.behaviors.init = {
 
 			if(win_w < 1000 && !jQuery('body').hasClass('shrank')){
 				jQuery('body').addClass('shrank').addClass('side-closed').removeClass('side-opened');
-			}else if(win_w > 1000 && jQuery('body').hasClass('shrank')){
+			}else if(win_w > 1000 && jQuery('body').hasClass('shrank') && jQuery.cookie('side-closed') != 'true'){
 				jQuery('body').removeClass('shrank').removeClass('side-closed').addClass('side-opened');
 			}
 		}
@@ -109,13 +109,13 @@ Drupal.behaviors.pinterest = {
 	}
 }
 
-function pinIt(){
-  var e = document.createElement('script');
-  e.setAttribute('type','text/javascript');
-  e.setAttribute('charset','UTF-8');
-  e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
-  document.body.appendChild(e);
-}
+// function pinIt(){
+//   var e = document.createElement('script');
+//   e.setAttribute('type','text/javascript');
+//   e.setAttribute('charset','UTF-8');
+//   e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+//   document.body.appendChild(e);
+// }
 
 
 Drupal.behaviors.icheck = {

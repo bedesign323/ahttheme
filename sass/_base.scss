@@ -102,6 +102,7 @@ $border_dashed_accent:  $color_accent dashed 1px;
 -------------------------------------------------------------- */
 *{
   @include box-sizing('border-box');
+  -webkit-backface-visibility: hidden;
 }
 
 body{

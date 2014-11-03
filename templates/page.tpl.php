@@ -4,13 +4,14 @@
 
 	<div id="extras-wrapper">
 	<div id="extras">
-		<div class="inner">
-			<h2 class="title">The Extras</h2>
+		<h2 class="title">The Extras</h2>
 			<div id="main-nav">
 				<div class="inner-nav">
 				<?php echo render($page['nav_main']); ?>
 				</div>
 			</div>
+		<div class="inner">
+			
 			<?php echo render($page['sidebar_first']); ?>
 			<div class="plane"><img src="/sites/all/themes/base/images/AH-plane-wt.png" alt="Aim High plane" nopin="nopin"></div>
 
@@ -49,8 +50,24 @@
 	</div>
 
 	<div id="footer" class="bg-light">
-			<div class="inner">
-				<div class="copy">&copy; <?php echo date('Y'); ?> Aim High. Don't steal. It's not nice. <a href="/robots">Just for robots...</a></div>
+		<div class="skyline"><img src="/sites/all/themes/base/images/AH-logo-footer.svg" alt=""></div>
+		<div class="inner">
+			
+			<div id="footer-left">
+				<?php echo render($page['footer_left']); ?>
 			</div>
+			
+			<div id="footer-right">
+				<?php echo render($page['footer_right']); ?>
+			</div>
+
+			<div class="copy">&copy; <?php echo date('Y'); ?> Aim High. Don't steal. It's not nice.</div>
 		</div>
+	</div>
 </div>
+
+
+
+
+
+
