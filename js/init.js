@@ -5,6 +5,9 @@ Drupal.behaviors.init = {
 		var doc = jQuery(document);
 		var win_w = win.width();
 		var win_h = win.height();
+		var main_nav = jQuery('#main-nav');
+		var extras_nav_holder = jQuery('#extras-nav-holder');
+		var main_nav_holder = jQuery('#main-nav-holder');
 
 
 
@@ -84,6 +87,20 @@ Drupal.behaviors.init = {
 			}else if(win_w > 1000 && jQuery('body').hasClass('shrank') && jQuery.cookie('side-closed') != 'true'){
 				jQuery('body').removeClass('shrank').removeClass('side-closed').addClass('side-opened');
 			}
+
+			if(win_w < 1000){
+				addNavToExtras();
+			}else{
+				addNavToMain();
+			}
+		}
+
+		function addNavToExtras(){
+			main_nav.appendTo('#extras-nav-holder');
+		}
+
+		function addNavToMain(){
+			main_nav.appendTo('#main-nav-holder');
 		}
 
 		winResize();
