@@ -1373,6 +1373,10 @@ body.mceContentBody,
 	position: relative;
 	padding: 0 130px 100px;
 
+	@include bp(s){
+		padding: 0 10px 50px;
+	}
+
 	.block + .block{
 		margin-top: 40px;
 	}
@@ -1387,6 +1391,10 @@ body.mceContentBody,
 	h2{
 		font-size: 30px;
 		margin-bottom: 20px;
+
+		@include bp(m){
+			font-size: 20px;
+		}
 	}
 
 	* + h2{
@@ -1464,6 +1472,16 @@ body.mceContentBody,
 	float: left;
 	width: 35%;
 	margin-left: 5%;
+}
+
+#footer-left,
+#footer-right{
+
+	@include bp(s){
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
 }
 
 
