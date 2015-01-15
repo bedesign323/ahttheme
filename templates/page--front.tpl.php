@@ -41,9 +41,9 @@
 		<h1>Aim High</h1>
 		<div class="divider">{</div>
 		<ul>
-			<li><a href="#" class="creative">Creative <span>Agency</span></a></li>
-			<li><a href="#" class="mag">Online <span>Magazine</span></a></li>
-			<li><a href="#" class="workshop">The <span>Workshop</span></a></li>
+			<li><a href="/creative" class="creative">Creative <span>Agency</span></a></li>
+			<li><a href="/recent" class="mag">Online <span>Magazine</span></a></li>
+			<li><a href="/recent" class="workshop">The <span>Workshop</span></a></li>
 		</ul>
 	</div>
 </div>
