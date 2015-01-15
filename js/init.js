@@ -119,6 +119,57 @@ Drupal.behaviors.init = {
 // }
 
 
+	Drupal.behaviors.splash = {
+		attach: function (context, settings) {
+			
+(function ($) {
+			var win = $(window);
+		    var win_w = win.width();
+
+			$('#back-to-top').click(function(){
+			    $("html, body").animate({ scrollTop: 0 }, 1200);
+			    return false;
+			 });
+
+		    $('.creative').hover(function() {
+		        onOver($('#creative'));
+		    }, function() {
+		        onOut($('#creative'));
+		    });
+
+		    $('.mag').hover(function() {
+		        onOver($('#mag'));
+		    }, function() {
+		        onOut($('#mag'));
+		    });
+
+		    $('.workshop').hover(function() {
+		        onOver($('#workshop'));
+		    }, function() {
+		        onOut($('#workshop'));
+		    });
+
+
+		    function onOver(space){
+		        win_w = win.width();
+
+		        if(win_w > 600){
+		            space.addClass('active');
+		        }
+		    }
+
+		    function onOut(space){
+		        win_w = win.width();
+
+		        if(win_w > 600){
+		            space.removeClass('active');
+		        }
+		    }
+
+		    })(jQuery);
+		}
+	}
+
 
 Drupal.behaviors.pinterest = {
 	attach: function (context, settings) {

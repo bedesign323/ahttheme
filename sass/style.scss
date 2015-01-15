@@ -1973,6 +1973,268 @@ div.messages-holder{
 	}
 }
 
+/* SPLASH
+-------------------------------------------------------------- */
+#splash{
+	position: relative;
+	font-family: $font_header !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+
+	#header{
+	  padding: 40px;
+	  text-align: right;
+
+	  @include bp(s){
+	    padding: 10px;
+	    position: fixed;
+	    bottom: -5px;
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	    z-index: 100;
+	  }
+	}
+
+	.social-icons{
+		text-align: right !important;
+
+	  a{
+	    @include inline-block;
+	    @include border-radius(20px);
+	    background-color: rgba(#fff, 9);
+	    padding: 10px;
+	    text-align: center;
+	    font-size: 16px;
+	    width: 40px;
+	    height: auto;
+	    line-height: normal;
+	    margin: 0;
+	  } 
+
+	  @include bp(s){
+			text-align: center !important;
+	  }
+	}
+
+
+	#main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  background-color: #fff;
+  padding: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 760px;
+  height: 330px;
+  margin: -230px 0 0 -380px;
+
+  .inner{
+  	padding: 0 !important;
+  }
+
+  h1{
+    @include inline-block;
+    font-size: 65px;
+    color: $color_accent;
+    font-weight: 100;
+    padding: 0 !important;
+
+    @include bp(s){
+      font-size: 35px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .divider{
+    @include inline-block;
+    font-size: 320px;
+    color: $color_accent;
+    font-weight: 100;
+    line-height: 250px;
+    padding: 0 20px;
+
+    @include bp(s){
+      display: none;
+    }
+  }
+
+  ul{
+    @include inline-block;
+    text-align: left;
+
+    span{
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    a{
+      @include inline-block;
+      color: $color_main;
+      border-bottom: transparent solid 2px;
+      padding: 0;
+      font-weight: 200;
+      font-size: 24px;
+      margin: 20px 0;
+
+      &:hover{
+        border-bottom: $color_accent solid 2px;
+      }
+
+
+      @include bp(s){
+        display: block;
+        font-size: 16px;
+        margin: 0;
+        padding: 15px;
+        border-top: $color_accent dashed 1px;
+      }
+    }
+
+    @include bp(s){
+      display: block;
+      text-align: center;
+      border-bottom: $color_accent dashed 1px;
+    }
+  }
+  
+  @include bp(s){
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    top: auto;
+    left: 0;
+    height: 250px;
+    padding: 0 0 20px;
+  }
+
+}
+
+#skyline{
+  position: fixed;
+  bottom: -2px;
+  left: -.5%;
+  width: 100%;
+  /*opacity: .9;*/
+  line-height: 0;
+
+  img{
+    width: 100.5%;
+    height: auto;
+  }
+
+  @include bp(s){
+    bottom: 250px;
+  }
+}
+
+#creative,
+#mag,
+#workshop{
+  @include transition;
+  opacity: 0;
+
+  &.active{
+    opacity: 1; 
+  }
+}
+
+#creative{
+opacity: 0;
+  @include bp(s){
+    opacity: 1 !important;
+  }
+}
+
+#mag{
+	opacity: 0;
+}
+
+#workshop{
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 100;
+}
+
+
+.bg-holder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .5%;
+  background-color: $color_accent;
+  z-index: -1;
+  
+  .view-content{
+    opacity: .3;
+  }
+
+  .views-row{
+    float: left;
+    width: 25%;
+    padding: .5%;
+    line-height: 0;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    @include bp(l){
+      width: 33.33%;
+    }
+
+    @include bp(m){
+      width: 50%;
+    }
+
+    
+  }
+
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .7em;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  .copy{
+  	padding: 0 !important;
+  }
+
+  @include bp(s){
+    line-height: 30px;
+    height: 30px;
+    font-size: .6em;
+    background-color: $color_accent;
+    display: none;
+  }
+}
+}
+
+
 /* EXTRAS
 -------------------------------------------------------------- */
 body.cke_show_borders{width: $main_width !important; min-width: $main_width; margin: 0 auto;}
