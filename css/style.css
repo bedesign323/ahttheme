@@ -2975,28 +2975,21 @@ div.messages-holder .status {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   opacity: 0;
+  display: block;
 }
-/* line 2145, ../sass/style.scss */
+/* line 2146, ../sass/style.scss */
 #splash #creative.active,
 #splash #mag.active,
 #splash #workshop.active {
   opacity: 1;
 }
-/* line 2150, ../sass/style.scss */
-#splash #creative {
-  opacity: 0;
-}
 @media (max-width: 600px) {
-  /* line 2150, ../sass/style.scss */
+  /* line 2151, ../sass/style.scss */
   #splash #creative {
     opacity: 1 !important;
   }
 }
-/* line 2157, ../sass/style.scss */
-#splash #mag {
-  opacity: 0;
-}
-/* line 2161, ../sass/style.scss */
+/* line 2160, ../sass/style.scss */
 #splash #workshop {
   color: #fff;
   font-size: 2em;
@@ -3004,7 +2997,7 @@ div.messages-holder .status {
   text-align: justify;
   font-weight: 100;
 }
-/* line 2170, ../sass/style.scss */
+/* line 2169, ../sass/style.scss */
 #splash .bg-holder {
   position: fixed;
   top: 0;
@@ -3013,37 +3006,37 @@ div.messages-holder .status {
   bottom: 0;
   padding: .5%;
   background-color: #e4ba27;
-  z-index: -1;
+  z-index: 0;
 }
-/* line 2180, ../sass/style.scss */
+/* line 2179, ../sass/style.scss */
 #splash .bg-holder .view-content {
   opacity: .3;
 }
-/* line 2184, ../sass/style.scss */
+/* line 2183, ../sass/style.scss */
 #splash .bg-holder .views-row {
   float: left;
   width: 25%;
   padding: .5%;
   line-height: 0;
 }
-/* line 2190, ../sass/style.scss */
+/* line 2189, ../sass/style.scss */
 #splash .bg-holder .views-row img {
   width: 100%;
   height: auto;
 }
 @media (max-width: 1200px) {
-  /* line 2184, ../sass/style.scss */
+  /* line 2183, ../sass/style.scss */
   #splash .bg-holder .views-row {
     width: 33.33%;
   }
 }
 @media (max-width: 1000px) {
-  /* line 2184, ../sass/style.scss */
+  /* line 2183, ../sass/style.scss */
   #splash .bg-holder .views-row {
     width: 50%;
   }
 }
-/* line 2208, ../sass/style.scss */
+/* line 2207, ../sass/style.scss */
 #splash #footer {
   position: fixed;
   bottom: 0;
@@ -3059,12 +3052,12 @@ div.messages-holder .status {
   padding: 0 !important;
   margin: 0 !important;
 }
-/* line 2223, ../sass/style.scss */
+/* line 2222, ../sass/style.scss */
 #splash #footer .copy {
   padding: 0 !important;
 }
 @media (max-width: 600px) {
-  /* line 2208, ../sass/style.scss */
+  /* line 2207, ../sass/style.scss */
   #splash #footer {
     line-height: 30px;
     height: 30px;
@@ -3076,40 +3069,40 @@ div.messages-holder .status {
 
 /* EXTRAS
 -------------------------------------------------------------- */
-/* line 2240, ../sass/style.scss */
+/* line 2239, ../sass/style.scss */
 body.cke_show_borders {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 2242, ../sass/style.scss */
+/* line 2241, ../sass/style.scss */
 .image-post_full {
   position: relative;
   z-index: 1;
 }
 
-/* line 2247, ../sass/style.scss */
+/* line 2246, ../sass/style.scss */
 div.krumo-root {
   width: 800px;
   margin-left: 500px;
 }
 
-/* line 2252, ../sass/style.scss */
+/* line 2251, ../sass/style.scss */
 body.mceContentBody {
   width: 800px !important;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* line 2259, ../sass/style.scss */
+/* line 2258, ../sass/style.scss */
 #cboxContent, .cboxPhoto {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 2263, ../sass/style.scss */
+/* line 2262, ../sass/style.scss */
 #cboxClose.cbox-close-plain {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -3122,7 +3115,7 @@ body.mceContentBody {
   /*text-indent: -999px !important;*/
 }
 
-/* line 2273, ../sass/style.scss */
+/* line 2272, ../sass/style.scss */
 #just-for-robots {
   font-family: "Raleway", sans-serif;
   color: #e4ba27;
@@ -3130,12 +3123,12 @@ body.mceContentBody {
   text-align: justify;
 }
 
-/* line 2281, ../sass/style.scss */
+/* line 2280, ../sass/style.scss */
 #logo-for-robots {
   padding-top: 600px;
   line-height: 0;
 }
-/* line 2285, ../sass/style.scss */
+/* line 2284, ../sass/style.scss */
 #logo-for-robots a {
   display: block;
 }
