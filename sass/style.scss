@@ -2141,6 +2141,7 @@ div.messages-holder{
 #workshop{
   @include transition;
   opacity: 0;
+  display: block;
 
   &.active{
     opacity: 1; 
@@ -2148,14 +2149,12 @@ div.messages-holder{
 }
 
 #creative{
-opacity: 0;
   @include bp(s){
     opacity: 1 !important;
   }
 }
 
 #mag{
-	opacity: 0;
 }
 
 #workshop{
@@ -2175,7 +2174,7 @@ opacity: 0;
   bottom: 0;
   padding: .5%;
   background-color: $color_accent;
-  z-index: -1;
+  z-index: 0;
   
   .view-content{
     opacity: .3;
