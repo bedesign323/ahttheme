@@ -1067,7 +1067,7 @@ h1,
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   margin-top: 60px;
-  margin-left: 350px;
+  margin-left: 0;
   clear: both;
 }
 /* line 504, ../sass/style.scss */

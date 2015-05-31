@@ -498,7 +498,7 @@ h1,
 #footer{
 	@include transition;
 	margin-top: 60px;
-	margin-left: $extras_width;
+	margin-left: 0;
 	clear: both;
 
 	.copy{
