@@ -10,9 +10,9 @@ Drupal.behaviors.init = {
 		var main_nav_holder = jQuery('#main-nav-holder');
 
 
-
+		jQuery('body').once().addClass('side-closed');
 		// Sidebar control
-		jQuery('#side-control, .search-toggle, #main-overlay').once().click(function(){
+		jQuery('#open-btn, .search-toggle, #main-overlay').once().click(function(){
 			jQuery('body').toggleClass('side-closed');
 			jQuery('body').toggleClass('side-opened');
 			
@@ -27,12 +27,12 @@ Drupal.behaviors.init = {
 				jQuery.cookie('side-closed', 'false');
 			}
 
-			console.log(jQuery.cookie('side-closed'));
+			//console.log(jQuery.cookie('side-closed'));
 		}
 
 		function checkSideCookie(){
 			if(jQuery.cookie('side-closed') == 'true'){
-				jQuery('body').addClass('side-closed');
+				//jQuery('body').addClass('side-closed');
 			}
 		}
 

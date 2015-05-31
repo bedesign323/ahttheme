@@ -2,7 +2,7 @@
 	<div class="meta-data">
 		<div class="post-date"><?php print $post_date; ?></div>
 		<span class="bull">&bull;</span>
-		<div class="author">by <?php print $author_link; ?></div>
+		<div class="author">words by <?php print $author_link; ?></div>
 		<div class="comment-count"><?php echo $comment_count; ?></div>
 	</div>
 

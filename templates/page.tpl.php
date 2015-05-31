@@ -1,7 +1,4 @@
-<div id="wrap">
-
-	
-
+<div id="wrap">	
 	<div id="extras-wrapper">
 	<div id="extras">
 		
@@ -25,7 +22,7 @@
 	<div id="logo"><a href="/"></a></div>
 	
 	<div id="main">
-		<div id="side-control"><div class="icon-menu"></div></div>
+		<div id="open-btn"><a href="#" class="icon-menu"></a></div>
 		<div id="main-overlay"></div>
 		<div class="inner">
 			
